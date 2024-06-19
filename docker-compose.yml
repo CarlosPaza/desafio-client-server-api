@@ -9,6 +9,7 @@ services:
       - TZ=Etc/UTC
     volumes:
       - ./config:/config
+      - ./server:/config/db
     ports:
       - 3000:3000
       - 3001:3001

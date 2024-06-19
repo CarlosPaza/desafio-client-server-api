@@ -103,7 +103,7 @@ func getExchangeRate(currency string) (*ExchangeRate, error) {
 }
 
 func conexaoDB() (*sql.DB, error) {
-	db, err := sql.Open("sqlite3", "../config/cotacao.db")
+	db, err := sql.Open("sqlite3", "cotacao.db")
 	if err != nil {
 		return nil, err
 	}
